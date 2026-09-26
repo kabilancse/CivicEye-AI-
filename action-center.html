@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Action Center — CivicEye AI+</title>
+<script>(function(){try{var t=localStorage.getItem('civiceye_theme');document.documentElement.setAttribute('data-theme',(t==='dark'||t==='light')?t:'light');}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
+<link rel="stylesheet" href="css/style.css" />
+<style>
+  .modal-backdrop { display:none; position:fixed; inset:0; background:rgba(8,10,12,.55); align-items:center; justify-content:center; z-index:50; }
+  .modal-backdrop.open { display:flex; }
+  .modal { background:var(--surface); border-radius:var(--radius-m); padding:var(--sp-6); width:100%; max-width:480px; border:1px solid var(--border); box-shadow: var(--shadow-card-hover); max-height: 90vh; overflow-y: auto; }
+  .action-card { border:1px solid var(--border); border-radius:var(--radius-m); padding:var(--sp-5); background:var(--surface); margin-bottom:var(--sp-4); box-shadow: var(--shadow-card); }
+</style>
+</head>
+<body>
+<div class="shell" id="shell-root"></div>
+
+<div class="modal-backdrop" id="new-action-backdrop">
+  <div class="modal">
+    <h3 style="font-size:var(--step-2);">New intervention</h3>
+    <form id="new-action-form">
+      <div class="field">
+        <label for="na-pattern">Responding to pattern</label>
+        <select id="na-pattern" required></select>
+        <div class="field-hint">Loaded from Social Radar's currently detected patterns.</div>
+      </div>
+      <div class="field"><label for="na-title">Title</label><input type="text" id="na-title" required /></div>
+      <div class="field"><label for="na-area">Area</label><input type="text" id="na-area" /></div>
+      <div class="field"><label for="na-description">Description</label><textarea id="na-description" rows="2"></textarea></div>
+      <div class="field"><label for="na-evidence">Evidence</label><textarea id="na-evidence" rows="2"></textarea></div>
+      <div id="na-error" style="display:none; background:var(--soft-brick-bg); color:var(--soft-brick-text); padding:10px 12px; border-radius:4px; font-size:13px; margin-bottom:12px;"></div>
+      <div class="flex" style="gap:10px; justify-content:flex-end;">
+        <button type="button" class="btn btn-secondary" id="na-cancel">Cancel</button>
+        <button type="submit" class="btn btn-primary" id="na-submit">Create intervention</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/shell.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/action-center.js"></script>
+</body>
+</html>

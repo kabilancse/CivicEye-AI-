@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Citizen Mode — CivicEye AI+</title>
+<script>(function(){try{var t=localStorage.getItem('civiceye_theme');document.documentElement.setAttribute('data-theme',(t==='dark'||t==='light')?t:'light');}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+</head>
+<body>
+<div class="shell" id="shell-root"></div>
+
+<template id="tmpl-stat">
+  <div class="stat-card"><div class="stat-label"></div><div class="stat-value teal"></div></div>
+</template>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="js/api.js"></script>
+<script src="js/shell.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/citizen.js"></script>
+</body>
+</html>

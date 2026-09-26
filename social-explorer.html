@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Social Explorer — CivicEye AI+</title>
+<script>(function(){try{var t=localStorage.getItem('civiceye_theme');document.documentElement.setAttribute('data-theme',(t==='dark'||t==='light')?t:'light');}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
+<link rel="stylesheet" href="css/style.css" />
+<style>
+  .explorer-tabs { display:flex; gap: var(--sp-2); border-bottom: 1px solid var(--border); margin-bottom: var(--sp-6); overflow-x:auto; }
+  .explorer-tabs button {
+    background:none; border:none; padding: 10px 4px; margin-right: var(--sp-6); font-size: var(--step-0); font-weight:600;
+    color: var(--text-muted); cursor:pointer; border-bottom: 2px solid transparent; white-space:nowrap;
+    transition: color .12s ease, border-color .12s ease;
+  }
+  .explorer-tabs button:hover { color: var(--text); }
+  .explorer-tabs button.active { color: var(--text); border-color: var(--accent-text); }
+  .panel { display:none; }
+  .panel.active { display:block; }
+  .relationship-row { display:flex; align-items:center; gap: var(--sp-4); padding: 14px 0; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+  .relationship-row:last-child { border-bottom:none; }
+  .rel-vars { min-width: 230px; font-size: 13px; flex: 1 1 230px; color: var(--text); }
+  .rel-vars .var { font-family: var(--font-mono); font-size: 12px; }
+  .rel-bar-track { flex:2 1 140px; height: 8px; background: var(--surface-alt); border-radius: 5px; overflow:hidden; min-width: 100px; }
+  .rel-bar-fill { height:100%; border-radius:5px; }
+  .rel-strength { font-family: var(--font-mono); font-size: 13px; width: 46px; text-align:right; color: var(--text); }
+  @media (max-width: 560px) {
+    .rel-vars, .rel-bar-track, .rel-strength { flex-basis: 100%; }
+    .rel-strength { text-align: left; }
+  }
+</style>
+</head>
+<body>
+<div class="shell" id="shell-root"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+<script src="js/api.js"></script>
+<script src="js/shell.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/social-explorer.js"></script>
+</body>
+</html>

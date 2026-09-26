@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CivicEye AI+ — See Society. Understand Problems.</title>
+<script>(function(){try{var t=localStorage.getItem('civiceye_theme');document.documentElement.setAttribute('data-theme',(t==='dark'||t==='light')?t:'light');}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/landing.css" />
+</head>
+<body>
+
+<header class="container">
+  <div class="nav-bar">
+    <a class="brand" href="index.html">
+      <svg class="brand-mark" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14.5" stroke="currentColor" stroke-width="1.6"/><circle cx="16" cy="16" r="4.2" fill="currentColor"/><path d="M16 3.5V9M16 23V28.5M3.5 16H9M23 16H28.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      <span class="brand-name">CivicEye AI+</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#modes" class="hide-mobile">Modes</a>
+      <a href="#how" class="hide-mobile">How it works</a>
+      <a href="login.html">Log in</a>
+      <a class="btn btn-primary btn-sm" href="login.html">Explore CivicEye</a>
+      <span data-theme-toggle-slot></span>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="container hero">
+    <p class="kicker">Civic intelligence &amp; social impact platform</p>
+    <h1>See society. Understand problems. Explore solutions. Drive change.</h1>
+    <p class="lede">CivicEye AI+ reads public and social data for early signs of emerging civic problems, so researchers and organizations can act before an issue becomes a crisis — rather than waiting for someone to file a complaint about it.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="login.html">Explore CivicEye</a>
+      <a class="link-quiet" href="#how">How the intelligence works ↓</a>
+    </div>
+
+    <div class="contrast-row">
+      <div class="contrast-card old">
+        <div class="label">Traditional grievance platform</div>
+        <p>Waits for a citizen to notice a problem, write it up, and submit a complaint — often long after the problem has taken hold.</p>
+      </div>
+      <div class="contrast-card new">
+        <div class="label">CivicEye AI+</div>
+        <p>Continuously reviews civic and social data for unusual patterns, and can surface a problem before it becomes widely visible.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="flow-section">
+    <div class="container">
+      <div class="section-head" style="margin-bottom:0;">
+        <h2>From signal to action</h2>
+        <p class="muted">One continuous loop, not a one-off report.</p>
+      </div>
+      <div class="flow-track" id="flow-track"></div>
+    </div>
+  </section>
+
+  <section class="modes-section" id="modes">
+    <div class="container">
+      <div class="section-head">
+        <h2>Three ways in</h2>
+        <p class="muted">CivicEye adapts to who's using it — a resident checking their area, a researcher studying a domain, or an organization running interventions.</p>
+      </div>
+      <div class="mode-cards">
+        <div class="mode-card">
+          <svg class="mode-icon" viewBox="0 0 20 20" fill="none"><path d="M10 2 3 5.5v4c0 4.4 3 7.7 7 9 4-1.3 7-4.6 7-9v-4L10 2Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+          <h3>Citizen Mode</h3>
+          <p>A grounded view of what's happening around your area — verified updates, identified patterns, and the status of ongoing initiatives.</p>
+          <a class="go" href="login.html?mode=citizen">Enter Citizen Mode →</a>
+        </div>
+        <div class="mode-card">
+          <svg class="mode-icon" viewBox="0 0 20 20" fill="none"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.3"/><path d="m17 17-3.5-3.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+          <h3>Social Explorer</h3>
+          <p>Investigate a domain — starting with Education — through detected patterns, statistical relationships, impact analysis, and a What-If simulation lab.</p>
+          <a class="go" href="login.html?mode=researcher">Enter Social Explorer →</a>
+        </div>
+        <div class="mode-card">
+          <svg class="mode-icon" viewBox="0 0 20 20" fill="none"><path d="M4 11.5 8.5 16 17 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Action Center</h3>
+          <p>Where organizations turn evidence into interventions — inspect the data behind a pattern, plan a response, and track it through to a measured outcome.</p>
+          <a class="go" href="login.html?mode=organization">Enter Action Center →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-section" id="how">
+    <div class="container">
+      <div class="section-head">
+        <h2>What the AI actually does</h2>
+        <p class="muted">CivicEye is a decision-support system. It surfaces evidence and shows its reasoning — it doesn't claim to solve civic problems on its own, and every pattern it finds is labeled as a statistical association, not a proven cause.</p>
+      </div>
+      <div class="how-grid">
+        <div class="how-item">
+          <div class="h-label">01</div>
+          <h4>Pattern detection</h4>
+          <p>Models scan public datasets for combinations of indicators — like transport access and dropout rate — that deviate from the norm for a given area.</p>
+        </div>
+        <div class="how-item">
+          <div class="h-label">02</div>
+          <h4>Explained, not black-boxed</h4>
+          <p>Every detected pattern ships with the variables behind it and a plain-language explanation, so a non-technical reader can follow the reasoning.</p>
+        </div>
+        <div class="how-item">
+          <div class="h-label">03</div>
+          <h4>Scenario estimates, clearly labeled</h4>
+          <p>The What-If Lab shows model-based "what could change" estimates — always marked as estimates, never presented as guarantees.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer container">
+  <div class="foot-row">
+    <div>
+      <div class="nav-bar" style="padding:0;"><a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14.5" stroke="currentColor" stroke-width="1.6"/><circle cx="16" cy="16" r="4.2" fill="currentColor"/></svg><span class="brand-name">CivicEye AI+</span></a></div>
+      <p class="mt-2">A student-built civic intelligence prototype. Built by team CivicNova.</p>
+    </div>
+    <div>
+      <p><a href="login.html">Log in</a> · <a href="#modes">Modes</a> · <a href="#how">How it works</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const FLOW = [
+    { n: "01", t: "Citizen sees" },
+    { n: "02", t: "CivicEye discovers" },
+    { n: "03", t: "Researcher investigates" },
+    { n: "04", t: "Organization acts" },
+    { n: "05", t: "CivicEye measures" },
+    { n: "06", t: "Citizen understands" },
+  ];
+  document.getElementById("flow-track").innerHTML = FLOW.map((step, i) => {
+    const arrow = i < FLOW.length - 1 ? `<div class="flow-arrow">→</div>` : "";
+    return `<div class="flow-node"><div class="n">${step.n}</div><div class="t">${step.t}</div></div>${arrow}`;
+  }).join("");
+</script>
+<script src="js/theme.js"></script>
+</body>
+</html>
